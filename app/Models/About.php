@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class About extends Model
+{
+    protected $fillable = ([
+        'h5',
+        'h2',
+        'p1',
+        'p2'
+    ]);
+}

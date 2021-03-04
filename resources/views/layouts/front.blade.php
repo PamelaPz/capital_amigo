@@ -104,7 +104,7 @@
                     <li class="side-menu-icons"><a href="javascript:void(0)"><i class="fab fa-instagram color-white"></i> </a> </li>
                     <li class="side-menu-icons"><a href="javascript:void(0)"><i class="fab fa-twitter color-white"></i> </a> </li>
                 </ul>
-                <p class="text-white">&copy; 2021 Capital Amigo. Hecho con <span style="color: rgb(201, 0, 0);">&#x2764;</span> por <a href="javascript:void(0)" style="color: white;">Tooring</a></p>
+                <p class="text-white">&copy; {{ now()->year }} Capital Amigo. Hecho con <span style="color: rgb(201, 0, 0);">&#x2764;</span> por <a href="javascript:void(0)" style="color: white;">Tooring</a></p>
             </div>
         </div>
     </div>
@@ -120,7 +120,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12 text-center">
-                <p class="copyrights px-0 py-5">© 2021 Capital Amigo. Hecho con <span style="color: rgb(201, 0, 0);">&#x2764;</span> por <a href="javascript:void(0)">Tooring</a></p>
+                <p class="copyrights px-0 py-5">© {{ now()->year }} Capital Amigo. Hecho con <span style="color: rgb(201, 0, 0);">&#x2764;</span> por <a href="javascript:void(0)">Tooring</a></p>
             </div>
         </div>
     </div>

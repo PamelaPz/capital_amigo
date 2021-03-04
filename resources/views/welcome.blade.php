@@ -280,11 +280,11 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="main-title wow fadeIn" data-wow-delay="300ms">
-                    <h5> Acerca de Capital Amigo </h5>
-                    <h2> Somos tus <b>mejores amigos</b> cuando se trata de inversión </h2>
+                    <h5> {{ $about->h5 }} </h5>
+                    <h2> {{ $about->h2 }} </h2>
 
-                    <p class="mb-4">Somos una firma de administración de capital enfocada en activos inmobiliarios en México.</p>
-                    <p>Generamos y a la vez somos responsables de toda la cadena de valor desde la originación, estructuración, desarrollo, monitorio y cierre de los proyectos e inversiones inmobiliarias.</p>
+                    <p class="mb-4">{{ $about->p1 }}</p>
+                    <p> {{ $about->p2 }} </p>
                 </div>
             </div>
         </div>
@@ -457,11 +457,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="main-title wow fadeIn" data-wow-delay="300ms">
-                    <h5> Proyectos </h5>
-                    <h2> Conoce los <b>proyectos</b> en los que hemos trabajo. </h2>
-                    <p>En cada proyecto tenemos el riesgo controlado a través de una metodología rigurosa de análisis, además contamos 
-                        con un <b>operador directo</b> que tiene la capacidad de coordinar y ejecutar la cadena de valor inmobiliaria en su
-                        totalidad</p>
+                    <h5> {{ $project->h5 }} </h5>
+                    <h2> {{ $project->h2 }} </h2>
+                    <p> {{ $project->p1 }} </p>
                 </div>
             </div>
         </div>
@@ -547,7 +545,7 @@
         <div class="row align-items-center">
             <div class="col-lg-2 col-md-12 p-0">
                 <div class="hover-effect">
-                    <div class="" style="background-image: url('./img/full14.jpg'); background-size: cover; width: 100%; height: 30rem; background-position: center;"></div>
+                    <div class="" style="background-image: url('capital_amigo/img/full14.jpg'); background-size: cover; width: 100%; height: 30rem; background-position: center;"></div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 p-lg-0 ">
@@ -573,14 +571,14 @@
             </div>
             <div class="col-lg-2 col-md-12 p-0">
                 <div class="hover-effect">
-                    <div class="" style="background-image: url('./img/full19.jpg'); background-size: cover; width: 100%; height: 30rem; background-position: center;"></div>
+                    <div class="" style="background-image: url('capital_amigo/img/full19.jpg'); background-size: cover; width: 100%; height: 30rem; background-position: center;"></div>
                 </div>
             </div>
         </div>
         <div class="row align-items-center">
             <div class="col-lg-2 col-md-12 p-0">
                 <div class="hover-effect">
-                    <div class="" style="background-image: url('./img/full13.jpg'); background-size: cover; width: 100%; height: 30rem; background-position: center;"></div>
+                    <div class="" style="background-image: url('capital_amigo/img/full13.jpg'); background-size: cover; width: 100%; height: 30rem; background-position: center;"></div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 p-lg-0 ">
@@ -607,7 +605,7 @@
             </div>
             <div class="col-lg-2 col-md-12 p-0">
                 <div class="hover-effect">
-                    <div class="" style="background-image: url('./img/full26.jpg'); background-size: cover; width: 100%; height: 30rem; background-position: center;"></div>
+                    <div class="" style="background-image: url('capital_amigo/img/full26.jpg'); background-size: cover; width: 100%; height: 30rem; background-position: center;"></div>
                 </div>
             </div>
         </div>
