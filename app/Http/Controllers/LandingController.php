@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\About;
 use App\Models\Projects;
+use App\Models\GridProjects;
 use Illuminate\Http\Request;
 
 class LandingController extends Controller
@@ -12,7 +13,7 @@ class LandingController extends Controller
     {
         $about = About::find(1);
         $project = Projects::find(1);
-        $grid_project = Company::all();
+        $grid_project = GridProjects::all();
 
         return view('welcome', compact('about', 'project', 'grid_project'));
     }

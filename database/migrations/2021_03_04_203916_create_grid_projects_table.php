@@ -15,6 +15,10 @@ class CreateGridProjectsTable extends Migration
     {
         Schema::create('grid_projects', function (Blueprint $table) {
             $table->id();
+
+            $table->String('imagen');
+            $table->text('name');
+
             $table->timestamps();
         });
     }
