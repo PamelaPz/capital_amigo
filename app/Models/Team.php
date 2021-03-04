@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class GridProjects extends Model
+class Team extends Model
 {
     protected $fillable = ([
         'imagen',
         'name',
-        'status',
+        'puesto',
     ]);
 }

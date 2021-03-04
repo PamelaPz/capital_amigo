@@ -15,16 +15,19 @@ class GridProjectsSeeder extends Seeder
     public function run()
     {
         DB::table('grid_projects')->insert([
-            'imagen' => 'capital_amigo/img/full16.jpg',
+            'imagen' => 'full16.jpg',
             'name' => 'Boturini 655',
+            'status' => '',
         ]);
         DB::table('grid_projects')->insert([
-            'imagen' => 'capital_amigo/img/full16.jpg',
+            'imagen' => 'full17.jpg',
             'name' => 'Proximamente',
+            'status' => 'proximamente',
         ]);
         DB::table('grid_projects')->insert([
-            'imagen' => 'capital_amigo/img/full16.jpg',
+            'imagen' => 'full18.jpg',
             'name' => 'Proximamente',
+            'status' => 'proximamente',
         ]);
     }
 }

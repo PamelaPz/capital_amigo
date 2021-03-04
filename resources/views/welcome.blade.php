@@ -342,26 +342,28 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="team-classic owl-team owl-carousel text-center wow fadeInUp">
-                    <div class="item">
-                        <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
-                            <div class="image">
-                                <img src="{{ asset('capital_amigo/img/full6.jpg')}}" alt="team" class="img-responsive" data-no-retina>
-                                <div class="team-overlay center-block">
-                                    <ul class="social_icon d-flex justify-content-center noborder">
-                                        <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                                        <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                                        <li><a class="google" href="javascript:void(0)"><i class="fab fa-google"></i> </a> </li>
-                                        <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                                    </ul>
+                    @foreach ($teams as $team)
+                        <div class="item">
+                            <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
+                                <div class="image">
+                                    <img src="{{ asset('capital_amigo/img/'.$team->imagen)}}" alt="team" class="img-responsive" data-no-retina>
+                                    <div class="team-overlay center-block">
+                                        <ul class="social_icon d-flex justify-content-center noborder">
+                                            <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
+                                            <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
+                                            <li><a class="google" href="javascript:void(0)"><i class="fab fa-google"></i> </a> </li>
+                                            <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-classic-content">
+                                    <h5 class="color-black font-weight-600 mb-2 text-capitalize">{{ $team->name }}</h5>
+                                    <p class="color-black font-weight-normal font-16 ">{{ $team->puesto }}</p>
                                 </div>
                             </div>
-                            <div class="team-classic-content">
-                                <h5 class="color-black font-weight-600 mb-2 text-capitalize">Gerardo López</h5>
-                                <p class="color-black font-weight-normal font-16 ">Socio fundador del Fondo</p>
-                            </div>
                         </div>
-                    </div>
-                    <div class="item">
+                    @endforeach
+                    {{--<div class="item">
                         <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                             <div class="image">
                                 <img src="{{ asset('capital_amigo/img/full5.jpg')}}" alt="team" class="img-responsive" data-no-retina>
@@ -379,7 +381,7 @@
                                 <p class="color-black font-weight-normal font-16 ">Socio fundador del Fondo</p>
                             </div>
                         </div>
-                    </div>
+                    </div>--}}
                 </div>
             </div>
         </div>
@@ -466,25 +468,27 @@
         <div class="row">
             <div class="col-sm-12 col-md-12">
                 <div class="wrapper-cases">
-                    <div class="case-item wow zoomIn">
-                        <div class="case-img">
-                            <img src="{{ asset('capital_amigo/img/full16.jpg')}}" alt="">
-                        </div>
-                        <a href="#" class="case-activeWrap hover-effect">
-                            <div class="cbp-l-caption-alignCenter">
-                                <div class="cbp-l-caption-body">
-                                    <div class="cases-image-inner">
-                                        <span class="cases-line top"></span>
-                                        <span class="cases-line top-right"></span>
-                                        <span class="cases-line bottom"></span>
-                                        <span class="cases-line bottom-left"></span>
-                                        <h6 class="text-white text-uppercase font-14 font-secondary font-weight-light">Boturini 655</h6>
+                    @foreach ($grid_projects as $grid_project)
+                        <div class="case-item wow zoomIn">
+                            <div class="case-img {{ $grid_project->status }}">
+                                <img src="{{ asset('capital_amigo/img/'.$grid_project->imagen)}}" alt="">
+                            </div>
+                            <a href="#" class="case-activeWrap hover-effect">
+                                <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="cases-image-inner">
+                                            <span class="cases-line top"></span>
+                                            <span class="cases-line top-right"></span>
+                                            <span class="cases-line bottom"></span>
+                                            <span class="cases-line bottom-left"></span>
+                                            <h6 class="text-white text-uppercase font-14 font-secondary font-weight-light">{{ $grid_project->name }}</h6>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="case-item wow zoomIn">
+                            </a>
+                        </div>
+                    @endforeach
+                    {{--<div class="case-item wow zoomIn">
                         <div class="case-img proximamente">
                             <img src="{{ asset('capital_amigo/img/full17.jpg')}}" alt="">
                         </div>
@@ -519,7 +523,7 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div>--}}
                 </div>
             </div>
         </div>
@@ -626,12 +630,14 @@
             </div>
         </div>
         <div class="brand-carousel owl-carousel owl-theme">
-            <div class="item">
-                <img src="{{ asset('capital_amigo/img/socio1.png')}}" alt="Logo">
-            </div>
-            <div class="item">
+            @foreach ($socios as $socio)
+                <div class="item">
+                    <img src="{{ asset('capital_amigo/img/'.$socio->imagen)}}" alt="Logo">
+                </div>
+            @endforeach
+            {{--<div class="item">
                 <img src="{{ asset('capital_amigo/img/socio2.png')}}" alt="Logo">
-            </div>
+            </div>--}}
         </div>
     </div>
     </div>
@@ -645,18 +651,17 @@
             <div class="col-lg-6 col-md-6 col-sm-12 pr-0">
                 <div class="contact-box box-shadow-contact">
                     <div class="main-title text-center text-md-left mb-4">
-                        <h2 class="font-weight-normal">Contáctanos</h2>
-                        <h5> Será un placer atenderte </h5>
+                        <h2 class="font-weight-normal">{{ $contact->h2 }}</h2>
+                        <h5> {{ $contact->h5 }} </h5>
                     </div>
                     <div class="text-center text-md-left">
                         <p class="mb-3">
                         <a class="color-black" href="https://www.google.com/maps/place/Av.+Pdte.+Masaryk+61,+Polanco,+Polanco+V+Secc,+Miguel+Hidalgo,+11560+Ciudad+de+M%C3%A9xico,+CDMX/@19.4316156,-99.1858359,17z/data=!4m5!3m4!1s0x85d1f8acb1b568ef:0x418e9c27c5a8301a!8m2!3d19.4316159!4d-99.183647" target="_blank" rel="noopener noreferrer">
-                            Presidente Masaryk 61-901B Col. Polanco. <br>
-                            Alcaldía Miguel Hidalgo, C.P 11560. Ciudad de México. 
+                            {{ $contact->address }}
                         </a> 
                         </p>
-                        <p class="mb-3"> Office Telephone : <a href="tel:+52 (55) 5293 9213"></a></p>
-                        <p class="mb-3"> Email: <a href="mailto:contacto@capitalamigo.mx" class="color-black">contacto@capitalamigo.mx</a> </p>
+                        <p class="mb-3"> Office Telephone : <a href="tel:+52 (55) 5293 9213" class="text-white">{{ $contact->phone }}</a></p>
+                        <p class="mb-3"> Email: <a href="mailto:contacto@capitalamigo.mx" class="color-black">{{ $contact->email }}</a> </p>
                         <!-- <p class="mb-3">Mon-Sat: 9am to 6pm</p> -->
                         <div class="address-social black">
                         <ul class="list-unstyled">
