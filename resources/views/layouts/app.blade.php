@@ -14,8 +14,6 @@
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +26,7 @@ The above copyright notice and this permission notice shall be included in all c
     <!-- Extra details for Live View on GitHub Pages -->
     
     <title>
-        {{ __('Paper Dashboard by Creative Tim') }}
+        {{ __('Dashboard') }}
     </title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
         name='viewport' />
@@ -47,7 +45,7 @@ The above copyright notice and this permission notice shall be included in all c
     
     @auth()
         @include('layouts.page_templates.auth')
-        @include('layouts.navbars.fixed-plugin')
+        <!-- @include('layouts.navbars.fixed-plugin') -->
     @endauth
     
     @guest

@@ -1,10 +1,10 @@
-<div class="fixed-plugin">
+{{--<div class="fixed-plugin">
     <div class="dropdown show-dropdown">
         <a href="#" data-toggle="dropdown">
             <i class="fa fa-cog fa-2x"> </i>
         </a>
         <ul class="dropdown-menu">
-            <li class="header-title"> Sidebar Background</li>
+            <li class="header-title">Fondo de Menú</li>
             <li class="adjustments-line">
                 <a href="javascript:void(0)" class="switch-trigger background-color">
                     <div class="badge-colors text-center">
@@ -14,7 +14,7 @@
                     <div class="clearfix"></div>
                 </a>
             </li>
-            <li class="header-title"> Sidebar Active Color</li>
+            <li class="header-title"> Color para botón activo</li>
             <li class="adjustments-line text-center">
                 <a href="javascript:void(0)" class="switch-trigger active-color">
                     <span class="badge filter badge-primary" data-color="primary"></span>
@@ -24,7 +24,7 @@
                     <span class="badge filter badge-danger active" data-color="danger"></span>
                 </a>
             </li>
-            <li class="button-container">
+            {{--<li class="button-container">
                 <a href="https://www.creative-tim.com/product/paper-dashboard-laravel" target="_blank"
                     class="btn btn-primary btn-block btn-round">Download Now</a>
             </li>
@@ -54,7 +54,7 @@
                 <a class="github-button" href="https://github.com/creativetimofficial/paper-dashboard"
                     data-icon="octicon-star" data-size="large" data-show-count="true"
                     aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-            </li>
+            </li>--}}
         </ul>
     </div>
-</div>
+</div>--}}

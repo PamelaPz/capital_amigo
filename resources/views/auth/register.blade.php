@@ -1,13 +1,13 @@
 @extends('layouts.app', [
     'class' => 'register-page',
-    'backgroundImagePath' => 'img/bg/jan-sendereks.jpg'
+    'backgroundImagePath' => 'img/bg/full23.jpg'
 ])
 
 @section('content')
     <div class="content">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-md-5 ml-auto">
+                {{--<div class="col-lg-5 col-md-5 ml-auto">
                     <div class="info-area info-horizontal mt-5">
                         <div class="icon icon-primary">
                             <i class="nc-icon nc-tv-2"></i>
@@ -41,22 +41,19 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mr-auto">
+                </div>--}}
+                <div class="col-lg-4 col-md-6 ml-auto mr-auto">
                     <div class="card card-signup text-center">
                         <div class="card-header ">
-                            <h4 class="card-title">{{ __('Register') }}</h4>
+                            <h4 class="card-title">{{ __('Regístrate') }}</h4>
                             <div class="social">
                                 <button class="btn btn-icon btn-round btn-twitter">
-                                    <i class="fa fa-twitter"></i>
-                                </button>
-                                <button class="btn btn-icon btn-round btn-dribbble">
-                                    <i class="fa fa-dribbble"></i>
+                                    <i class="fab fa-twitter"></i>
                                 </button>
                                 <button class="btn btn-icon btn-round btn-facebook">
-                                    <i class="fa fa-facebook-f"></i>
+                                    <i class="fab fa-facebook"></i>
                                 </button>
-                                <p class="card-description">{{ __('or be classical') }}</p>
+                                <p class="card-description">{{ __('o') }}</p>
                             </div>
                         </div>
                         <div class="card-body ">
@@ -68,7 +65,7 @@
                                             <i class="nc-icon nc-single-02"></i>
                                         </span>
                                     </div>
-                                    <input name="name" type="text" class="form-control" placeholder="Name" value="{{ old('name') }}" required autofocus>
+                                    <input name="name" type="text" class="form-control" placeholder="Nombre" value="{{ old('name') }}" required autofocus>
                                     @if ($errors->has('name'))
                                         <span class="invalid-feedback" style="display: block;" role="alert">
                                             <strong>{{ $errors->first('name') }}</strong>
@@ -81,7 +78,7 @@
                                             <i class="nc-icon nc-email-85"></i>
                                         </span>
                                     </div>
-                                    <input name="email" type="email" class="form-control" placeholder="Email" required value="{{ old('email') }}">
+                                    <input name="email" type="email" class="form-control" placeholder="Correo Electrónico" required value="{{ old('email') }}">
                                     @if ($errors->has('email'))
                                         <span class="invalid-feedback" style="display: block;" role="alert">
                                             <strong>{{ $errors->first('email') }}</strong>
@@ -94,7 +91,7 @@
                                             <i class="nc-icon nc-key-25"></i>
                                         </span>
                                     </div>
-                                    <input name="password" type="password" class="form-control" placeholder="Password" required>
+                                    <input name="password" type="password" class="form-control" placeholder="Contraseña" required>
                                     @if ($errors->has('password'))
                                         <span class="invalid-feedback" style="display: block;" role="alert">
                                             <strong>{{ $errors->first('password') }}</strong>
@@ -107,7 +104,7 @@
                                             <i class="nc-icon nc-key-25"></i>
                                         </span>
                                     </div>
-                                    <input name="password_confirmation" type="password" class="form-control" placeholder="Password confirmation" required>
+                                    <input name="password_confirmation" type="password" class="form-control" placeholder="Confirmación de contraseña" required>
                                     @if ($errors->has('password_confirmation'))
                                         <span class="invalid-feedback" style="display: block;" role="alert">
                                             <strong>{{ $errors->first('password_confirmation') }}</strong>
@@ -118,8 +115,8 @@
                                     <label class="form-check-label">
                                         <input class="form-check-input" name="agree_terms_and_conditions" type="checkbox">
                                         <span class="form-check-sign"></span>
-                                            {{ __('I agree to the') }}
-                                        <a href="#something">{{ __('terms and conditions') }}</a>.
+                                            {{ __('Acepto los') }}
+                                        <a href="#something">{{ __('términos y condiciones') }}</a>.
                                     </label>
                                     @if ($errors->has('agree_terms_and_conditions'))
                                         <span class="invalid-feedback" style="display: block;" role="alert">
@@ -128,7 +125,7 @@
                                     @endif
                                 </div>
                                 <div class="card-footer ">
-                                    <button type="submit" class="btn btn-info btn-round">{{ __('Get Started') }}</button>
+                                    <button type="submit" class="btn btn-info btn-round">{{ __('Registrarme') }}</button>
                                 </div>
                             </form>
                         </div>

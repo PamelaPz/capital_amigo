@@ -21,13 +21,18 @@ Auth::routes();
 // Auth::routes();
 
 Route::group(['middleware' => 'auth'], function () {
-	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'App\Http\Controllers\ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'App\Http\Controllers\ProfileController@update']);
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'App\Http\Controllers\ProfileController@password']);
-	Route::get('{page}', ['as' => 'page.index', 'uses' => 'App\Http\Controllers\PageController@index']);
-
-	Route::resource('about', 'AboutController');
+	// Route::get('{page}', ['as' => 'page.index', 'uses' => 'App\Http\Controllers\PageController@index']);
+	
+	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);
+	Route::resource('about', 'App\Http\Controllers\AboutController');
+	Route::resource('project', 'App\Http\Controllers\ProjectsController');
+	Route::resource('grid_projects', 'App\Http\Controllers\GridProjectsController');
+	Route::resource('socios', 'App\Http\Controllers\SociosController');
+	Route::resource('teams', 'App\Http\Controllers\TeamsController');
+	Route::resource('contact', 'App\Http\Controllers\ContactController');
 });
 
 

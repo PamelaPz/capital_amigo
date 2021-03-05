@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
@@ -16,6 +17,12 @@ class AboutController extends Controller
         //
     }
 
+    public function edit($id)
+    {
+        $about = About::find($id);
+
+        return view('about.edit', compact('about'));
+    }
     /**
      * Display the specified resource.
      *

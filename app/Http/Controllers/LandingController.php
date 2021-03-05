@@ -18,8 +18,8 @@ class LandingController extends Controller
         $project = Projects::find(1);
         $grid_projects = GridProjects::all();
         $socios = Socios::all();
-        $contact = Contact::find(1);
         $teams = Team::all();
+        $contact = Contact::find(1);
 
         return view('welcome', compact('about', 'project', 'grid_projects', 'socios', 'contact', 'teams'));
     }
