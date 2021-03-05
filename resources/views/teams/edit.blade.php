@@ -1,4 +1,7 @@
-@extends('layouts.app', ['class' => '','elementActive' => 'about'])
+@extends('layouts.app', [
+    'class' => '',
+    'elementActive' => 'teams'
+])
 
 @section('content')
     <div class="content">
@@ -9,38 +12,30 @@
                     {{--@method('PUT')--}}
                     <div class="card py-3">
                         <div class="card-header mx-3">
-                            <h5 class="title">{{ __('Editar Acerca de ') }}</h5>
+                            <h5 class="title">{{ __('Editar Imagen') }}</h5>
                         </div>
                         <div class="card-body mx-3">
                             <div class="row">
-                                <label class="col-md-3 col-form-label">{{ __('Nombre de Sección') }}</label>
+                                <label class="col-md-3 col-form-label">{{ __('Nombre') }}</label>
                                 <div class="col-md-9">
                                     <div class="form-group">
-                                        <input type="text" name="name" class="form-control" placeholder="Acerca de" value="{{ $about->h5 }}">
+                                        <input type="text" name="name" class="form-control" placeholder="Nombre" value="{{ $team->name }}">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <label class="col-md-3 col-form-label">{{ __('Título') }}</label>
+                                <label class="col-md-3 col-form-label">{{ __('Estatus') }}</label>
                                 <div class="col-md-9">
                                     <div class="form-group">
-                                        <input type="text" name="name" class="form-control" placeholder="Título" value="{{ $about->h2 }}">
+                                        <input type="text" name="name" class="form-control" placeholder="Estatus" value="{{ $team->puesto }}">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <label class="col-md-3 col-form-label">{{ __('Párrafo 1') }}</label>
+                                <label class="col-md-3 col-form-label" for="img">{{ __('Buscar Imagen') }}</label>
                                 <div class="col-md-9">
                                     <div class="form-group">
-                                        <textarea name="name" id="name" rows="4" class="form-control" style="max-height:none" placeholder="Párrafo 1">{{ $about->p1 }}</textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label class="col-md-3 col-form-label">{{ __('Párrafo 2') }}</label>
-                                <div class="col-md-9">
-                                    <div class="form-group">
-                                        <textarea name="name" id="name" rows="4" class="form-control" style="max-height:none" placeholder="Párrafo 2">{{ $about->p2 }}</textarea>
+                                        <input style="opacity: 1;position: initial;" type="file" id="img" name="imagensubida" accept="image/png, .jpeg, .jpg, image/gif">
                                     </div>
                                 </div>
                             </div>

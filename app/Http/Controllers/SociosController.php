@@ -21,9 +21,9 @@ class SociosController extends Controller
 
     public function edit($id)
     {
-        // $company = Company::find($id);
-
-        // return view('companies.edit', compact('company'));
+        $socio = Socios::find($id);
+    
+        return view('socios.edit', compact('socio'));
     }
     /**
      * Display the specified resource.

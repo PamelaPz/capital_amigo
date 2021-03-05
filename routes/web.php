@@ -31,7 +31,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('project', 'App\Http\Controllers\ProjectsController');
 	Route::resource('grid_projects', 'App\Http\Controllers\GridProjectsController');
 	Route::resource('socios', 'App\Http\Controllers\SociosController');
-	Route::resource('teams', 'App\Http\Controllers\TeamsController');
+	Route::resource('teams', 'App\Http\Controllers\TeamController');
 	Route::resource('contact', 'App\Http\Controllers\ContactController');
 });
 

@@ -21,9 +21,9 @@ class TeamController extends Controller
 
     public function edit($id)
     {
-        // $socios = Team::find();
+        $team = Team::find($id);
     
-        // return view('socios.index', compact('socios'));
+        return view('teams.edit', compact('team'));
     }
     /**
      * Display the specified resource.

@@ -1,1 +1,7 @@
 /*-- Use For Custom Styling --*/
+.img_table {
+    width: 150px;
+}
+.img_table img{
+    width: 100%;
+}
