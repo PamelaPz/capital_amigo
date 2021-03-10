@@ -15,10 +15,10 @@ class SociosSeeder extends Seeder
     public function run()
     {
         DB::table('socios')->insert([
-            'imagen' => 'socio1.png',
+            'imagen' => 'Images/socio1.png',
         ]);
         DB::table('socios')->insert([
-            'imagen' => 'socio2.png',
+            'imagen' => 'Images/socio2.png',
         ]);
     }
 }

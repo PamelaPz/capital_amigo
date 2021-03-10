@@ -23,6 +23,7 @@ class AboutController extends Controller
 
         return view('about.edit', compact('about'));
     }
+
     /**
      * Display the specified resource.
      *
@@ -31,7 +32,25 @@ class AboutController extends Controller
      */
     public function show($id)
     {
-        //
+        $about = About::find($id);
+
+        return view('about.show', compact('about'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $about = About::FindOrFail($id);
+
+        $about->update($request->all());
+
+        return redirect()->route('about.show', compact('about'));
     }
 
     /**

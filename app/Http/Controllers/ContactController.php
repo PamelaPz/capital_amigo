@@ -23,6 +23,7 @@ class ContactController extends Controller
     
         return view('contact.edit', compact('contact'));
     }
+    
     /**
      * Display the specified resource.
      *
@@ -31,7 +32,25 @@ class ContactController extends Controller
      */
     public function show($id)
     {
-        //
+        $contact = Contact::find($id);
+
+        return view('contact.show', compact('contact'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $contact = Contact::FindOrFail($id);
+
+        $contact->update($request->all());
+
+        return redirect()->route('contact.show', compact('contact'));
     }
 
     /**

@@ -4,9 +4,9 @@
     <div class="content">
         <div class="row">
             <div class="col-md-12">
-                <form class="col-md-12" action="{{ route('about.edit', 1) }}" enctype="multipart/form-data"> {{--method="POST"--}}
+                <form class="col-md-12" action="{{ route('about.edit', 1) }}" method="POST" enctype="multipart/form-data">
                     @csrf
-                    {{--@method('PUT')--}}
+                    @method('PUT')
                     <div class="card py-3">
                         <div class="card-header mx-3">
                             <h5 class="title">{{ __('Editar Contacto') }}</h5>
@@ -55,7 +55,10 @@
                         </div>
                         <div class="card-footer ">
                             <div class="row">
-                                <div class="col-md-12 text-center">
+                                <div class="col-md-2 text-left">
+                                    <a href="{{ route('project.show', 1) }}" class="btn btn-info btn-round">{{ __('Regresar') }}</a>
+                                </div>
+                                <div class="col-md-10 text-center">
                                     <button type="submit" class="btn btn-info btn-round">{{ __('Guardar Cambios') }}</button>
                                 </div>
                             </div>

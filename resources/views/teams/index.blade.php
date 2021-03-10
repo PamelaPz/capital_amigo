@@ -29,19 +29,25 @@
                                     @foreach ($teams as $team)
                                         <tr class="text-center">
                                             <td>
-                                                {{ $team->name }}
+                                               <a href="{{ route('teams.show', $team->id ) }}"> {{ $team->name }} </a>
                                             </td>
                                             <td>
-                                                {{ $team->puesto }}
+                                                <a href="{{ route('teams.show', $team->id ) }}"> {{ $team->puesto }} </a>
                                             </td>
                                             <td>
                                                 <div class="img_table mx-auto">
-                                                    <img src="{{ asset('capital_amigo/img/'.$team->imagen)}}" alt="">
+                                                    <a href="{{ route('teams.show', $team->id ) }}">
+                                                        <img src="{{ asset('storage/'.$team->imagen)}}" alt=""> 
+                                                    </a>
                                                 </div>
                                             </td>
                                             <td>
-                                                <a class="btn" href="{{ route('teams.edit', $team->id) }}"><span style="font-size: 16px"><i class="nc-icon nc-settings"></i></span></a>
-                                                <a class="btn" href="{{ route('teams.destroy', $team->id) }}"><span style="font-size: 16px"><i class="nc-icon nc-basket"></i></span></a>
+                                                <a class="btn" rel="tooltip" title="Editar" href="{{ route('teams.edit', $team->id) }}"><span style="font-size: 16px"><i class="nc-icon nc-settings"></i></span></a>
+                                                <form action="{{ route('teams.destroy', $team->id) }}" method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                        <button type="submit" rel="tooltip" title="Eliminar" class="btn"><span style="font-size: 16px"><i class="nc-icon nc-basket"></i></span></button>
+                                                </form>
                                             </td>
                                         </tr>
                                     @endforeach

@@ -5,3 +5,6 @@
 .img_table img{
     width: 100%;
 }
+.img_table_show {
+    width: 300px;
+}

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Team;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class TeamController extends Controller
 {
@@ -33,7 +34,38 @@ class TeamController extends Controller
      */
     public function show($id)
     {
-        //
+        $teams = Team::find($id);
+
+        return view('teams.show', compact('teams'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $team = Team::FindOrFail($id);
+
+        if( $request->hasFile('imagen') ){
+            $file = $request->file('imagen');
+            $name = str_replace(' ','-', $file->getClientOriginalName());
+            $path = 'Images/' . $name;
+            Storage::putFileAs('/public/' . 'Images/', $file, $name );
+            $team::whereId($id)->update([
+                'name' => $request->name,
+                'puesto' => $request->puesto,
+                'imagen' => $path,
+            ]);
+        }
+        else{
+            $team->update($request->all());
+        }
+
+        return redirect()->route('teams.index', compact('team'));
     }
 
     /**
@@ -44,6 +76,8 @@ class TeamController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $team = Team::find($id)->delete();
+
+        return back();
     }
 }

@@ -18,7 +18,7 @@
                 </a>
             </li>
             <li class="{{ $elementActive == 'about' ? 'active' : '' }}">
-                <a href="{{ route('about.edit', 1) }}">
+                <a href="{{ route('about.show', 1) }}">
                     <i class="nc-icon nc-badge"></i>
                     <p>{{ __('Acerca de') }}</p>
                 </a>
@@ -34,7 +34,7 @@
                 <div class="collapse show" id="proyectos">
                     <ul class="nav">
                         <li class="{{ $elementActive == 'project' ? 'active' : '' }}">
-                            <a href="{{ route('project.edit', 1) }}">
+                            <a href="{{ route('project.show', 1) }}">
                                 <span class="sidebar-mini-icon">{{ __('T') }}</span>
                                 <span class="sidebar-normal">{{ __(' Textos') }}</span>
                             </a>
@@ -61,7 +61,7 @@
                 </a>
             </li>
             <li class="{{ $elementActive == 'contact' ? 'active' : '' }}">
-                <a href="{{ route('contact.edit', 1) }}">
+                <a href="{{ route('contact.show', 1) }}">
                     <i class="nc-icon nc-send"></i>
                     <p>{{ __('Contacto') }}</p>
                 </a>

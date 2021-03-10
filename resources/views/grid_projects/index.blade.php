@@ -30,19 +30,23 @@
                                     @foreach ($grid_projects as $grid_project)
                                         <tr class="text-center">
                                             <td>
-                                                {{$grid_project->name}}
+                                               <p> {{$grid_project->name}} </p>
                                             </td>
                                             <td>
-                                                {{$grid_project->status}}
+                                               <p class="text-capitalize"> {{$grid_project->status}} </p>
                                             </td>
                                             <td>
                                                 <div class="img_table mx-auto">
-                                                    <img src="{{ asset('capital_amigo/img/'.$grid_project->imagen)}}" alt="">
+                                                    <img src="{{ asset('storage/'.$grid_project->imagen)}}" alt="">
                                                 </div>
                                             </td>
                                             <td>
-                                                <a class="btn" href="{{ route('grid_projects.edit', $grid_project->id) }}"><span style="font-size: 16px"><i class="nc-icon nc-settings"></i></span></a>
-                                                <a class="btn" href="{{ route('grid_projects.destroy', $grid_project->id) }}"><span style="font-size: 16px"><i class="nc-icon nc-basket"></i></span></a>
+                                                <a class="btn" rel="tooltip" title="Editar" href="{{ route('grid_projects.edit', $grid_project->id) }}"><span style="font-size: 16px"><i class="nc-icon nc-settings"></i></span></a>
+                                                <form action="{{ route('grid_projects.destroy', $grid_project->id) }}" method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                        <button type="submit" rel="tooltip" title="Eliminar" class="btn"><span style="font-size: 16px"><i class="nc-icon nc-basket"></i></span></button>
+                                                </form>
                                             </td>
                                         </tr>
                                     @endforeach

@@ -15,12 +15,12 @@ class TeamSeeder extends Seeder
     public function run()
     {
         DB::table('teams')->insert([
-            'imagen' => 'full5.jpg',
+            'imagen' => 'Images/full5.jpg',
             'name' => 'Gerardo López',
             'puesto' => 'Socio fundador del Fondo',
         ]);
         DB::table('teams')->insert([
-            'imagen' => 'full6.jpg',
+            'imagen' => 'Images/full6.jpg',
             'name' => 'Carlos Valladares',
             'puesto' => 'Socio fundador del Fondo',
         ]);

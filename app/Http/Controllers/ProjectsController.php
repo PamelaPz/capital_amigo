@@ -23,6 +23,7 @@ class ProjectsController extends Controller
 
         return view('project.edit', compact('project'));
     }
+    
     /**
      * Display the specified resource.
      *
@@ -31,7 +32,25 @@ class ProjectsController extends Controller
      */
     public function show($id)
     {
-        //
+        $project = Projects::find($id);
+
+        return view('project.show', compact('project'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $project = Projects::FindOrFail($id);
+
+        $project->update($request->all());
+
+        return redirect()->route('project.show', compact('project'));
     }
 
     /**

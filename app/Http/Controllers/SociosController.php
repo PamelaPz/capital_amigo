@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Socios;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class SociosController extends Controller
 {
@@ -37,6 +38,30 @@ class SociosController extends Controller
     }
 
     /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $socio = Socios::FindOrFail($id);
+
+        if( $request->hasFile('imagen') ){
+            $file = $request->file('imagen');
+            $name = str_replace(' ','-', $file->getClientOriginalName());
+            $path = 'Images/' . $name;
+            Storage::putFileAs('/public/' . 'Images/', $file, $name );
+            $socio::whereId($id)->update([
+                'imagen' => $path,
+            ]);
+        }
+
+        return redirect()->route('socios.index', compact('socio'));
+    }
+
+    /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
@@ -44,6 +69,8 @@ class SociosController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $socio = Socios::find($id)->delete();
+
+        return back();
     }
 }
