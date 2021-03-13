@@ -15,3 +15,4 @@
 - Contacto terminado: ver datos y actualziar.
 
 ## Pendientes
+- Proyectos / Imagenes no guarda imagenes y opciones de select
