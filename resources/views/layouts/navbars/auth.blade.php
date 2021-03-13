@@ -66,7 +66,7 @@
                     <p>{{ __('Contacto') }}</p>
                 </a>
             </li>
-            <li class="{{ $elementActive == 'user' || $elementActive == 'profile' ? 'active' : '' }}">
+            {{--<li class="{{ $elementActive == 'user' || $elementActive == 'profile' ? 'active' : '' }}">
                 <a data-toggle="collapse" aria-expanded="true" href="#laravelExamples">
                     <i class="nc-icon"><img src="{{ asset('paper/img/laravel.svg') }}"></i>
                     <p>
@@ -90,7 +90,7 @@
                         </li>
                     </ul>
                 </div>
-            </li>
+            </li>--}}
             {{--<li class="active-pro {{ $elementActive == 'upgrade' ? 'active' : '' }}">
                 <a href="{{ route('page.index', 'upgrade') }}" class="bg-danger">
                     <i class="nc-icon nc-spaceship text-white"></i>
