@@ -7,7 +7,7 @@
     <div class="content">
         <div class="row">
             <div class="col-md-12">
-                <form class="col-md-12" action="{{ route('about.edit', 1) }}" enctype="multipart/form-data"> {{--method="POST"--}}
+                <form class="col-md-12" action="{{ route('grid_projects.edit', 1) }}" enctype="multipart/form-data"> {{--method="POST"--}}
                     @csrf
                     {{--@method('PUT')--}}
                     <div class="card py-3">
