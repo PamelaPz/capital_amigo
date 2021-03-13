@@ -165,7 +165,7 @@
                          data-frames='[{"delay":600,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['center','center','center','center']"
                          style="z-index:99; max-width: 960px">
-                        <a href="#aboutus" class="scroll btn-setting btn-scale btn-green text-white">read more</a>
+                        <a href="#aboutus" class="scroll btn-setting btn-scale btn-green text-white">Leer más</a>
                     </div>
 
                 </li>
@@ -252,7 +252,7 @@
                          style="z-index:1; font-weight: 500; line-height: 65px; color: #ffffff;font-family: 'Raleway', sans-serif;text-transform:normal"> desarrollo y monetización.
                     </div>
                     <!-- LAYER NR. 5 -->
-                    <div class="tp-caption tp-resizeme"
+                    <!-- <div class="tp-caption tp-resizeme"
                          data-x="['right','right','center','center']" data-hoffset="['60','60','0','0']"
                          data-y="['middle','middle','middle','middle']" data-voffset="['130','130','130','120']"
                          data-responsive_offset="['on','on','on','on']"
@@ -263,8 +263,8 @@
                          data-start="1200" data-splitin="none" data-splitout="none"
                          style="z-index:99; min-width: 960px; max-width: 960px">
                         <a href="javascript:void(0)" class="btn-setting btn-scale btn-white color-black">get started</a>
-                        <!-- <a href="javascript:void(0)" class="btn-setting btn-scale btn-blue text-white">learn more</a> -->
-                    </div>
+                        <a href="javascript:void(0)" class="btn-setting btn-scale btn-blue text-white">learn more</a>
+                    </div> -->
                 </li>
                 
             </ul>
@@ -346,7 +346,7 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="{{ asset('capital_amigo/img/'.$team->imagen)}}" alt="team" class="img-responsive" data-no-retina>
+                                    <img src="{{ asset('storage/'.$team->imagen)}}" alt="team" class="img-responsive" data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
                                             <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
@@ -471,7 +471,7 @@
                     @foreach ($grid_projects as $grid_project)
                         <div class="case-item wow zoomIn">
                             <div class="case-img {{ $grid_project->status }}">
-                                <img src="{{ asset('capital_amigo/img/'.$grid_project->imagen)}}" alt="">
+                                <img src="{{ asset('storage/'.$grid_project->imagen)}}" alt="">
                             </div>
                             <a href="#" class="case-activeWrap hover-effect">
                                 <div class="cbp-l-caption-alignCenter">
@@ -632,12 +632,9 @@
         <div class="brand-carousel owl-carousel owl-theme">
             @foreach ($socios as $socio)
                 <div class="item">
-                    <img src="{{ asset('capital_amigo/img/'.$socio->imagen)}}" alt="Logo">
+                    <img src="{{ asset('storage/'.$socio->imagen)}}" alt="Logo">
                 </div>
             @endforeach
-            {{--<div class="item">
-                <img src="{{ asset('capital_amigo/img/socio2.png')}}" alt="Logo">
-            </div>--}}
         </div>
     </div>
     </div>

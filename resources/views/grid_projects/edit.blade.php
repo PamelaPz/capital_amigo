@@ -27,13 +27,20 @@
                                 <label class="col-md-3 col-form-label">{{ __('Estatus') }}</label>
                                 <div class="col-md-9">
                                     <div class="form-group">
-                                        <input type="text" name="name" class="form-control" placeholder="Estatus" value="{{ $grid_project->status }}">
+                                        <select name="status" id="status" class="form-control">
+                                            <!-- Hace una tabla para los estatus -->
+                                            <option value="Finalizado" {{ $grid_project->status === "finalziado" ? selected : ''}}">Finalizado</option>
+                                            <option value="Proximamente">Proximente</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <label class="col-md-3 col-form-label" for="img">{{ __('Buscar Imagen') }}</label>
+                                <label class="col-md-3 col-form-label" for="img">{{ __('Imagen Actual') }}</label>
                                 <div class="col-md-9">
+                                    <div class="img_table mx-auto">
+                                        <img src="{{ asset('storage/'.$grid_project->imagen)}}" alt="">
+                                    </div>
                                     <div class="form-group">
                                         <input style="opacity: 1;position: initial;" type="file" id="img" name="imagensubida" accept="image/png, .jpeg, .jpg, image/gif">
                                     </div>

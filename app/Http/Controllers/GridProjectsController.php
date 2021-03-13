@@ -37,6 +37,33 @@ class GridProjectsController extends Controller
     }
 
     /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $grid_project = GridProjects::FindOrFail($id);
+
+        if( $request->hasFile('imagen') ){
+            $file = $request->file('imagen');
+            $name = str_replace(' ','-', $file->getClientOriginalName());
+            $path = 'Images/' . $name;
+            Storage::putFileAs('/public/' . 'Images/', $file, $name );
+            $grid_project::whereId($id)->update([
+                'imagen' => $path,
+            ]);
+        }
+        else{
+            $grid_project->update($request->all());
+        }
+
+        return redirect()->route('grid_projects.index', compact('grid_project'));
+    }
+
+    /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
@@ -44,6 +71,8 @@ class GridProjectsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $grid_project = GridProjects::find($id)->delete();
+
+        return back();
     }
 }
