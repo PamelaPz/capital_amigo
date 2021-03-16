@@ -11,7 +11,7 @@
                     @csrf
                     <div class="card py-3">
                         <div class="card-header mx-3">
-                            <h5 class="title">{{ __('Crear Integrante') }}</h5>
+                            <h5 class="title">{{ __('Nuevo Integrante') }}</h5>
                         </div>
                         <div class="card-body mx-3">
                             <div class="row">

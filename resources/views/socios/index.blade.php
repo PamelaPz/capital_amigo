@@ -8,8 +8,15 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card py-3" style="background-color: #A0A0A0 !important;">
-                    <div class="card-header mx-3 text-white">
-                            <h5 class="title">{{ __('Lista de Imágenes') }}</h5>
+                    <div class="row ml-2 mr-3">
+                        <div class="col-md-10 ">
+                            <div class="card-header">
+                                <h5 class="title text-white">{{ __('Lista de Imágenes ') }}</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-right">
+                            <a href="{{ route('socios.create', 1) }}" class="btn btn-info btn-round ">{{ __('Nuevo Socio') }}</a>
+                        </div>
                     </div>
                     <div class="card-body mx-3">
                         <div class="table-responsive">

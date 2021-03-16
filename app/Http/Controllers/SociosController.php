@@ -20,6 +20,41 @@ class SociosController extends Controller
         return view('socios.index', compact('socios'));
     }
 
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        $socio = Socios::get();
+
+        return view('socios.create', compact('socio'));
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $socio = new Socios;
+
+        if( $request ){
+            $file = $request->file('imagen');
+            $name = str_replace(' ','-', $file->getClientOriginalName());
+            $path = 'Images/' . $name;
+            Storage::putFileAs('/public/' . 'Images/', $file, $name );
+            $socio::create([
+                'imagen' => $path,
+            ]);
+        }
+
+        return redirect()->route('socios.index', compact('socio'));
+    }
+
     public function edit($id)
     {
         $socio = Socios::find($id);
