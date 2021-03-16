@@ -8,8 +8,15 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card py-3" >
-                    <div class="card-header mx-3">
-                            <h5 class="title">{{ __('Lista de Imágenes') }}</h5>
+                <div class="row ml-2 mr-3">
+                        <div class="col-md-10 ">
+                            <div class="card-header">
+                                <h5 class="title">{{ __('Lista de Imágenes ') }}</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-right">
+                            <a href="{{ route('teams.create', 1) }}" class="btn btn-info btn-round ">{{ __('Crear Integrante') }}</a>
+                        </div>
                     </div>
                     <div class="card-body mx-3">
                         <div class="table-responsive">

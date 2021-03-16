@@ -251,20 +251,6 @@
                          data-start="2000" data-splitin="none" data-splitout="none"
                          style="z-index:1; font-weight: 500; line-height: 65px; color: #ffffff;font-family: 'Raleway', sans-serif;text-transform:normal"> desarrollo y monetización.
                     </div>
-                    <!-- LAYER NR. 5 -->
-                    <!-- <div class="tp-caption tp-resizeme"
-                         data-x="['right','right','center','center']" data-hoffset="['60','60','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['130','130','130','120']"
-                         data-responsive_offset="['on','on','on','on']"
-                         data-width="['320','320','320','320']" data-textalign="['center','center','center','center']"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                         data-transform_out="s:20;e:Power4.easeInOut;s:20;e:Power4.easeInOut;"
-                         data-start="1200" data-splitin="none" data-splitout="none"
-                         style="z-index:99; min-width: 960px; max-width: 960px">
-                        <a href="javascript:void(0)" class="btn-setting btn-scale btn-white color-black">get started</a>
-                        <a href="javascript:void(0)" class="btn-setting btn-scale btn-blue text-white">learn more</a>
-                    </div> -->
                 </li>
                 
             </ul>

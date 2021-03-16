@@ -20,6 +20,44 @@ class TeamController extends Controller
         return view('teams.index', compact('teams'));
     }
 
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        $team = Team::get();
+        // $teams = Team::all();
+
+        return view('teams.create', compact('team'));
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $team = new Team;
+
+        if( $request ){
+            $file = $request->file('imagen');
+            $name = str_replace(' ','-', $file->getClientOriginalName());
+            $path = 'Images/' . $name;
+            Storage::putFileAs('/public/' . 'Images/', $file, $name );
+            $team::create([
+                'name' => $request->name,
+                'puesto' => $request->puesto,
+                'imagen' => $path,
+            ]);
+        }
+
+        return redirect()->route('teams.index', compact('team'));
+    }
+
     public function edit($id)
     {
         $team = Team::find($id);

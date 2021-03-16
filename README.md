@@ -16,3 +16,19 @@
 
 ## Pendientes
 - Proyectos / Imagenes no guarda imagenes y opciones de select
+
+
+## Actualizar
+Para mantener el proyecto en la última versión:
+
+```
+git pull origin main
+```
+Crear el enlace simbólico para ver la carpeta Storage directamente en Public
+```
+php artisan storage:link
+```
+Actualizar migraciones y poblar la base de datos
+```
+php artisan migrate:refresh --seed
+```
