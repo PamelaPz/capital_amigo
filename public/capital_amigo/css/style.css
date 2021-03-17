@@ -706,6 +706,12 @@ nav .btn-setting {
 .team-classic.owl-team .item {
     margin-bottom: 40px;
 }
+.item {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ===================================
    Social Icon Hover

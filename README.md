@@ -10,12 +10,13 @@
 ## Historial de cambios
 - About terminado: ver datos y actualziar.
 - Proyectos / Textos terminado: ver datos y actualziar.
-- Socios terminado: ver datos, actualziar y borrar.
-- Equipo terminado: ver datos, actualziar y borrar.
+- Socios terminado: ver datos, actualziar, borrar y crear.
+- Equipo terminado: ver datos, actualziar, borrar y crear.
 - Contacto terminado: ver datos y actualziar.
+- Proyectos / Imagenes terminado: ver datos, actualizar y crear.
 
 ## Pendientes
-- Proyectos / Imagenes no guarda imagenes y opciones de select
+
 
 
 ## Actualizar
