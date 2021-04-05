@@ -631,7 +631,7 @@
 <section id="contact" class="w-100 bg-light-gray2 py-5">
     <div class="container contact-shadow">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 pr-0">
+            <div class="col-lg-6 col-md-6 col-sm-12 pr-lg-0">
                 <div class="contact-box box-shadow-contact">
                     <div class="main-title text-center text-md-left mb-4">
                         <h2 class="font-weight-normal">{{ $contact->h2 }}</h2>

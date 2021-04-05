@@ -3530,7 +3530,8 @@ ul.rounded li::before {
         transform: translateY(-50%);
     }
     .contact-box {
-        padding: 4.5rem 0;
+        padding: 4.5rem 50px;
+        margin-bottom: 3rem;
     }
     .brand-transform-padding {
         padding: 0 0 490px;
