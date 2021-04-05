@@ -124,7 +124,7 @@
                     <div class="tp-caption tp-resizeme"
                          data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
                          data-y="['middle','middle','middle','middle']" data-voffset="['5','5','5','15']"
-                         data-fontsize="['55','55','55','35']"
+                         data-fontsize="['55','55','55','25']"
                          data-whitespace="nowrap" data-responsive_offset="on"
                          data-width="['none','none','none','none']" data-type="text"
                          data-textalign="['center','center','center','center']"
@@ -134,9 +134,9 @@
                     </div>
                     <div class="tp-caption tp-resizeme"
                          data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['75','5','5','15']"
-                         data-fontsize="['55','55','55','35']"
-                         data-whitespace="nowrap" data-responsive_offset="on"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['75','5','5','65']"
+                         data-fontsize="['55','55','55','25']"
+                         data-whitespace="['nowrap','nowrap','nowrap','wrap']" data-responsive_offset="on"
                          data-width="['none','none','none','none']" data-type="text"
                          data-textalign="['center','center','center','center']"
                          data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"x:[100%];opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"x:[100%];opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","ease":"Power4.easeInOut"}]'
@@ -146,7 +146,7 @@
                     <!-- LAYER NR. 5 -->
                     <div class="tp-caption tp-resizeme"
                          data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['145','75','75','75']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['145','75','75','135']"
                          data-fontsize="['22','22','24','16']"
                          data-whitespace="nowrap" data-responsive_offset="on"
                          data-width="['none','none','none','none']" data-type="text"
@@ -160,7 +160,7 @@
                     <!-- LAYER NR. 6 -->
                     <div class="tp-caption tp-resizeme"
                          data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['215','145','145','145']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['215','145','145','210']"
                          data-width="['180','180','180','180']"
                          data-frames='[{"delay":600,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['center','center','center','center']"
@@ -277,7 +277,7 @@
     </div>
     <div class="container-full py-4">
         <div class="row">
-            <div class="col-md-4 col-sm-12 mb-xs-2rem p-0">
+            <div class="col-md-4 col-sm-12 p-0">
                 <div class="about-box center-block wow zoomIn" data-wow-delay="400ms">
                     <div class="about-opacity-icon"> <i class="fas fa-bullseye" aria-hidden="true"></i> </div>
                     <div class="about-main-icon pb-4">
@@ -287,7 +287,7 @@
                     <p>Administrar y maximizar rendimiento y rentabilidad de los fondos, inversionistas y clientes impulsando el desarrollo del país.</p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12 mb-xs-2rem p-0">
+            <div class="col-md-4 col-sm-12 p-0">
                 <div class="about-box center-block wow zoomIn" data-wow-delay="400ms">
                     <div class="about-opacity-icon"> <i class="fa fa-lightbulb" aria-hidden="true"></i> </div>
                     <div class="about-main-icon pb-4">
@@ -297,7 +297,7 @@
                     <p>Ser promotores de la inversión en México enfocados en la maximización de la rentabilidad de los inversionistas, clientes y empleados para lograr el desarrollo de proyectos inmobiliarios exitosos que incentiven el crecimiento de la industria.</p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12 mb-xs-2rem p-0">
+            <div class="col-md-4 col-sm-12 p-0">
                 <div class="about-box center-block wow zoomIn" data-wow-delay="600ms">
                     <div class="about-opacity-icon"> <i class="fa fa-chart-line" aria-hidden="true"></i> </div>
                     <div class="about-main-icon pb-4">
