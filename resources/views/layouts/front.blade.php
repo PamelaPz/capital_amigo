@@ -4,9 +4,9 @@
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose agency and HTML5 template with 14 ready inicio page demos.">
+    <meta name="description" content="Capital Amigo">
     <!-- keywords -->
-    <meta name="keywords" content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, masonry, grid, faq">
+    <meta name="keywords" content="Capital Amigo">
     <!-- Page Title -->
     <title>Capital Amigo | Inversiones Inmobiliarias</title>
     <!-- Favicon -->
