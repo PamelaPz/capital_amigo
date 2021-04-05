@@ -617,7 +617,7 @@
         </div>
         <div class="brand-carousel owl-carousel owl-theme">
             @foreach ($socios as $socio)
-                <div class="item">
+                <div class="item" id="socio">
                     <img src="{{ asset('storage/'.$socio->imagen)}}" alt="Logo">
                 </div>
             @endforeach
