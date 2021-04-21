@@ -36,7 +36,7 @@
                         <li class="{{ $elementActive == 'project' ? 'active' : '' }}">
                             <a href="{{ route('project.show', 1) }}">
                                 <span class="sidebar-mini-icon">{{ __('T') }}</span>
-                                <span class="sidebar-normal">{{ __(' Textos') }}</span>
+                                <span class="sidebar-normal">{{ __(' Texto') }}</span>
                             </a>
                         </li>
                         <li class="{{ $elementActive == 'grid_project' ? 'active' : '' }}">
@@ -48,7 +48,7 @@
                     </ul>
                 </div>
             </li>
-            <li class="{{ $elementActive == 'socios' ? 'active' : '' }}">
+            {{--<li class="{{ $elementActive == 'socios' ? 'active' : '' }}">
                 <a href="{{ route('socios.index') }}">
                     <i class="nc-icon nc-book-bookmark"></i>
                     <p>{{ __('Socios') }}</p>
@@ -59,7 +59,7 @@
                     <i class="nc-icon nc-chat-33"></i>
                     <p>{{ __('Equipo') }}</p>
                 </a>
-            </li>
+            </li>--}}
             <li class="{{ $elementActive == 'contact' ? 'active' : '' }}">
                 <a href="{{ route('contact.show', 1) }}">
                     <i class="nc-icon nc-send"></i>

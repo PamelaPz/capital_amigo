@@ -628,13 +628,13 @@
                         <p class="mb-3"> Email: <a href="mailto:contacto@capitalamigo.mx" class="color-black">{{ $contact->email }}</a> </p>
                         <!-- <p class="mb-3">Mon-Sat: 9am to 6pm</p> -->
                         <div class="address-social black">
-                        <ul class="list-unstyled">
-                            <li><a class="facebook-bg-hvr ml-0" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                            <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a class="google-bg-hvr" href="javascript:void(0);"><i class="fab fa-google" aria-hidden="true"></i></a></li>
-                            <li><a class="linkedin-bg-hvr" href="javascript:void(0);"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li><a class="instagram-bg-hvr mr-0" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
+                            <ul class="list-unstyled">
+                                <li><a class="facebook-bg-hvr ml-0" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a class="google-bg-hvr" href="javascript:void(0);"><i class="fab fa-google" aria-hidden="true"></i></a></li>
+                                <li><a class="linkedin-bg-hvr" href="javascript:void(0);"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a class="instagram-bg-hvr mr-0" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
