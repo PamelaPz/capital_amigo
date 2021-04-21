@@ -313,7 +313,7 @@
 <!-- About ends -->
 
 <!-- Team start -->
-<section>
+{{--<section>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -349,30 +349,11 @@
                             </div>
                         </div>
                     @endforeach
-                    {{--<div class="item">
-                        <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
-                            <div class="image">
-                                <img src="{{ asset('capital_amigo/img/full5.jpg')}}" alt="team" class="img-responsive" data-no-retina>
-                                <div class="team-overlay center-block">
-                                    <ul class="social_icon d-flex justify-content-center noborder">
-                                        <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                                        <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                                        <li><a class="google" href="javascript:void(0)"><i class="fab fa-google"></i> </a> </li>
-                                        <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="team-classic-content">
-                                <h5 class="color-black font-weight-600 mb-2 text-capitalize">Carlos Valladares</h5>
-                                <p class="color-black font-weight-normal font-16 ">Socio fundador del Fondo</p>
-                            </div>
-                        </div>
-                    </div>--}}
                 </div>
             </div>
         </div>
     </div>
-</section>
+</section>--}}
 <!-- Team ends -->
 
 <section class="py-0">    
@@ -604,7 +585,7 @@
 <!-- Price ends -->
 
 <!-- Brands starts -->
-<section class="bg-black3">
+{{--<section class="bg-black3">
     <div class="py-4">
       <h2 class="d-none">heading</h2>
        <div class="container">
@@ -624,7 +605,7 @@
         </div>
     </div>
     </div>
-</section>
+</section>--}}
 <!-- Brands ends -->
 
 <!-- Contact & Map starts -->
@@ -643,7 +624,7 @@
                             {{ $contact->address }}
                         </a> 
                         </p>
-                        <p class="mb-3"> Office Telephone : <a href="tel:+52 (55) 5293 9213" class="text-white">{{ $contact->phone }}</a></p>
+                        <p class="mb-3"> Office Telephone : <a href="tel:+52 (55) 5293 9213" class="color-black">{{ $contact->phone }}</a></p>
                         <p class="mb-3"> Email: <a href="mailto:contacto@capitalamigo.mx" class="color-black">{{ $contact->email }}</a> </p>
                         <!-- <p class="mb-3">Mon-Sat: 9am to 6pm</p> -->
                         <div class="address-social black">
