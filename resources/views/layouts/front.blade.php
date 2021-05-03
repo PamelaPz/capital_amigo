@@ -56,9 +56,9 @@
 <header>
     <nav class="navbar navbar-top-default navbar-expand-lg static-nav transparent-bg nav-bottom-line">
         <div class="container">
-            <a class="logo" href="javascript:void(0)">
-                <img src="{{ asset('capital_amigo/img/logo.png')}}" alt="logo" title="Logo" class="logo-default">
-                <img src="{{ asset('capital_amigo/img/logo.png')}}" alt="logo" title="Logo" class="logo-scrolled">
+            <a class="logo" href="#inicio">
+                <img src="{{ asset('capital_amigo/img/Logo_CapitalAmigo_Blanco.png')}}" alt="logo" title="Logo" class="logo-default">
+                <img src="{{ asset('capital_amigo/img/Logo_CapitalAmigo_FClaro.png')}}" alt="logo" title="Logo" class="logo-scrolled">
             </a>
             <div class="collapse navbar-collapse d-none d-lg-block">
                 <ul class="nav navbar-nav ml-auto mr-4">

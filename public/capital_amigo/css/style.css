@@ -818,7 +818,8 @@ nav .btn-setting {
 }
 /* logo */
 .logo {
-    max-width: 140px;
+    max-width: 240px;
+    margin-left: -70px;
 }
 .logo img {
     vertical-align: middle;
