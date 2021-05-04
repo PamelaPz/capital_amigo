@@ -3416,6 +3416,7 @@ ul.rounded li::before {
     }
     .logo {
         max-width: 120px;
+        margin-left: 0;
     }
     .side-menu {
         width: 380px;
